@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@styled-system/css": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2",
     "@types/styled-components": "^5.1.13",
     "next": "11.1.0",
     "react": "17.0.2",
