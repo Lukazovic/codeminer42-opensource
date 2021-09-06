@@ -2,15 +2,15 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Box from '@/components/Box'
 import {
-  Flex,
-  Heading,
-  Text,
-  Container,
-  Section,
   A,
   Button,
+  Container,
+  Flex,
+  Heading,
   Icon,
   Logo,
+  Section,
+  Text,
 } from '@/components'
 
 const Home: NextPage = () => {
@@ -19,17 +19,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Opensource</title>
         <meta name='description' content='Opensource' />
-        <link rel='icon' href='/favicon.ico' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link
-          rel='preconnect'
-          href='https://fonts.gstatic.com'
-          crossOrigin='true'
-        />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dosis:wght@600&display=swap'
-          rel='stylesheet'
-        />
       </Head>
 
       <Box as='header'>
