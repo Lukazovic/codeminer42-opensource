@@ -6,9 +6,10 @@ import {
   Button,
   Container,
   Flex,
+  Footer,
+  Header,
   Heading,
   Icon,
-  Logo,
   Section,
   Text,
 } from '@/components'
@@ -21,32 +22,7 @@ const Home: NextPage = () => {
         <meta name='description' content='Opensource' />
       </Head>
 
-      <Box as='header'>
-        <Flex
-          as={Container}
-          alignItems='center'
-          justifyContent={['center', 'space-between']}
-          height='60px'
-        >
-          <A as={Flex} href='/' alignItems='center'>
-            <Logo />
-
-            <Heading
-              as='h1'
-              ml='2'
-              fontFamily='logo'
-              fontSize={['6', '6', '7']}
-              fontWeight='600'
-              fontStyle='normal'
-            >
-              Code
-              <Text as='span' color='gray.600'>
-                Miner
-              </Text>
-            </Heading>
-          </A>
-        </Flex>
-      </Box>
+      <Header />
 
       <Box as='main'>
         <Section py={['5', '6', '7']}>
@@ -104,6 +80,7 @@ const Home: NextPage = () => {
                       <Icon mr='1' name='star' color='blue' /> 282
                     </Flex>
                   </Heading>
+
                   <Heading as='p' fontWeight='700' color='blue' ml='3'>
                     <Flex as='span' alignItems='center'>
                       <Icon name='fork' color='blue' /> 59
@@ -139,6 +116,7 @@ const Home: NextPage = () => {
                       <Icon mr='1' name='star' color='blue' /> 4
                     </Flex>
                   </Heading>
+
                   <Heading as='p' fontWeight='700' color='blue' ml='3'>
                     <Flex as='span' alignItems='center'>
                       <Icon name='fork' color='blue' /> 1
@@ -174,6 +152,7 @@ const Home: NextPage = () => {
                       <Icon mr='1' name='star' color='blue' /> 0
                     </Flex>
                   </Heading>
+
                   <Heading as='p' fontWeight='700' color='blue' ml='3'>
                     <Flex as='span' alignItems='center'>
                       <Icon name='fork' color='blue' /> 0
@@ -208,23 +187,7 @@ const Home: NextPage = () => {
         </Section>
       </Box>
 
-      <Box as='footer' height={['45px', '52px']} bg='blue'>
-        <Container
-          as={Flex}
-          alignItems='center'
-          justifyContent='center'
-          height='100%'
-          px='3'
-        >
-          <A
-            href='https://www.codeminer42.com/'
-            color='white'
-            fontSize={['4', '5']}
-          >
-            © Codeminer42
-          </A>
-        </Container>
-      </Box>
+      <Footer />
     </>
   )
 }
