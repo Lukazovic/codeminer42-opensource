@@ -1,11 +1,12 @@
 const colors = {
-  black: '#11111a',
+  black: '#2c2d2d',
   white: '#ffffff',
   gray: {
-    100: '#fffefc',
-    200: '#cfcfd3',
+    100: '#f7f8fc',
+    600: '#515153',
   },
-  red: '#e16259',
+  blue: '#2e31a6',
+  red: '#e95659',
   green: '#2ecc71',
 }
 
@@ -13,8 +14,8 @@ const colors = {
 const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 
 const fonts = {
-  body: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;",
-  heading: 'inherit',
+  body: "'Barlow', sans-serif",
+  logo: "'Dosis', sans-serif",
 }
 
 //                 0  1  2  3  4   5   6   7   8   9   10  11  12   13
