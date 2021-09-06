@@ -1,6 +1,15 @@
 import styled from 'styled-components'
-import { space, color, layout } from 'styled-system'
+import {
+  space,
+  SpaceProps,
+  color,
+  ColorProps,
+  layout,
+  LayoutProps,
+} from 'styled-system'
 
-const Box = styled.div({}, layout, space, color)
+type Props = SpaceProps & ColorProps & LayoutProps
+
+const Box = styled.div<Props>({}, layout, space, color)
 
 export default Box
