@@ -1,3 +1,4 @@
+import { Icon } from '.'
 import A from './A'
 import Box from './Box'
 import Container from './Container'
@@ -5,6 +6,7 @@ import Flex from './Flex'
 import Heading from './Heading'
 import Logo from './Logo'
 import Text from './Text'
+import MediaIcon from './MediaIcon'
 
 const Header = () => (
   <Box as='header'>
@@ -31,6 +33,12 @@ const Header = () => (
           </Text>
         </Heading>
       </A>
+
+      <Flex justifyContent='space-between' width='100px'>
+        <MediaIcon name='linkedin' />
+        <MediaIcon name='facebook' />
+        <MediaIcon name='twitter' />
+      </Flex>
     </Flex>
   </Box>
 )
