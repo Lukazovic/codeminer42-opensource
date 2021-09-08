@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "node": "16.2.0"
+  },
   "dependencies": {
     "@styled-system/css": "^5.1.5",
     "@styled-system/theme-get": "^5.1.2",
