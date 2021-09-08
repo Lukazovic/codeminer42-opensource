@@ -1,4 +1,4 @@
-import { Icon } from '.'
+import Icon from './Icon'
 import A from './A'
 import Box from './Box'
 import Container from './Container'
