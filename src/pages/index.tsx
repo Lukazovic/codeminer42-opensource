@@ -88,10 +88,21 @@ const Home: NextPage = () => {
                   </Heading>
                 </Flex>
 
-                <Text mt={['3', '3', '4']}>
+                <Text mt={['3', '3', '4']} height='95px'>
                   Fork and Evolution of the Fulcrum project - An agile project
                   planning tool and Pivotal Tracker drop-in replacement
                 </Text>
+
+                <Flex mt={3} justifyContent='center'>
+                  <Button
+                    as='a'
+                    href='https://github.com/Codeminer42/cm42-central'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Check Repository
+                  </Button>
+                </Flex>
               </Box>
 
               <Box
@@ -124,10 +135,21 @@ const Home: NextPage = () => {
                   </Heading>
                 </Flex>
 
-                <Text mt={['3', '3', '4']}>
+                <Text mt={['3', '3', '4']} height='95px'>
                   A simple electronic punch clock to track hours spent on
                   projects
                 </Text>
+
+                <Flex mt={3} justifyContent='center'>
+                  <Button
+                    as='a'
+                    href='https://github.com/Codeminer42/Punchclock'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Check Repository
+                  </Button>
+                </Flex>
               </Box>
 
               <Box
@@ -160,9 +182,12 @@ const Home: NextPage = () => {
                   </Heading>
                 </Flex>
 
-                <Text mt={['3', '3', '4']}>
+                <Text mt={['3', '3', '4']} height='95px'>
                   Marvin is a chat bot built on the Hubot framework
                 </Text>
+                <Flex mt={3} justifyContent='center'>
+                  <Button disabled>Check Repository</Button>
+                </Flex>
               </Box>
             </Flex>
           </Container>
