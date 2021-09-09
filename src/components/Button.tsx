@@ -18,6 +18,7 @@ const Button = styled(Text)`
   transition: opacity 0.2s ease;
   border-radius: 50vh;
   border: none;
+  text-decoration: none;
 
   &:hover {
     opacity: 0.8;
