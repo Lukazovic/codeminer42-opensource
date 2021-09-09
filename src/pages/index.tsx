@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                   planning tool and Pivotal Tracker drop-in replacement
                 </Text>
 
-                <Flex mt='20px' justifyContent='center'>
+                <Flex mt={3} justifyContent='center'>
                   <Button
                     as='a'
                     href='https://github.com/Codeminer42/cm42-central'
@@ -140,7 +140,7 @@ const Home: NextPage = () => {
                   projects
                 </Text>
 
-                <Flex mt='20px' justifyContent='center'>
+                <Flex mt={3} justifyContent='center'>
                   <Button
                     as='a'
                     href='https://github.com/Codeminer42/Punchclock'
@@ -185,12 +185,8 @@ const Home: NextPage = () => {
                 <Text mt={['3', '3', '4']} height='95px'>
                   Marvin is a chat bot built on the Hubot framework
                 </Text>
-                <Flex mt='20px' justifyContent='center'>
-                  <Button
-                    className='disabled'
-                  >
-                    Check Repository
-                  </Button>
+                <Flex mt={3} justifyContent='center'>
+                  <Button disabled>Check Repository</Button>
                 </Flex>
               </Box>
             </Flex>
