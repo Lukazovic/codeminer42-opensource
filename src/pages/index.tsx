@@ -187,7 +187,7 @@ const Home: NextPage = () => {
                 </Text>
                 <Flex mt='20px' justifyContent='center'>
                   <Button
-                   onClick={()=> (alert('Marvin is coming...'))}
+                    className='disabled'
                   >
                     Check Repository
                   </Button>

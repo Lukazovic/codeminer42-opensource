@@ -20,7 +20,7 @@ const Button = styled(Text)`
   border: none;
   text-decoration: none;
 
-  &:hover {
+  &:hover :not(.disabled) {
     opacity: 0.8;
   }
 `
