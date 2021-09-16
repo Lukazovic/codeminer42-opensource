@@ -1,4 +1,4 @@
-[# opensource-site](https://opensource.codeminer42.com/)
+# [opensource-site](https://opensource.codeminer42.com/)
 
 ![CI Workflow](https://github.com/Codeminer42/opensource/actions/workflows/main.yml/badge.svg)
 
