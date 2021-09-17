@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Opensource</title>
+        <title>Opensource - By Codeminer42</title>
         <meta name='description' content='Opensource' />
       </Head>
 
