@@ -84,6 +84,23 @@ const Header = () => (
             <Icon name='twitter' />
           </A>
         </Flex>
+
+        <Flex
+          as='span'
+          alignItems='center'
+          justifyContent='center'
+          backgroundColor='gray.100'
+          borderRadius='50%'
+          size='30px'
+        >
+          <A
+            href='https://github.com/Codeminer42/opensource'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Icon name='github' />
+          </A>
+        </Flex>
       </Flex>
     </Flex>
   </Box>
