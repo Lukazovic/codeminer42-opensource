@@ -27,11 +27,6 @@ const mediaIcons: mediaIcon[] = [
     name: 'twitter',
     link: 'https://twitter.com/codeminer42',
   },
-
-  {
-    name: 'github',
-    link: 'http://github.com/Codeminer42/opensource',
-  },
 ]
 
 const Header = () => (
@@ -60,7 +55,7 @@ const Header = () => (
         </Heading>
       </A>
 
-      <Flex justifyContent='space-between' width='150px'>
+      <Flex justifyContent='space-around' width='300px'>
         {mediaIcons.map((icon) => (
           <Flex
             key={icon.name}
@@ -76,6 +71,24 @@ const Header = () => (
             </A>
           </Flex>
         ))}
+
+        <Flex
+          as='span'
+          alignItems='center'
+          justifyContent='center'
+          backgroundColor='gray.100'
+          borderRadius='50%'
+          size='30px'
+          marginLeft="100px"
+        >
+          <A
+            href='http://github.com/Codeminer42/opensource'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Icon name='github' />
+          </A>
+        </Flex>
       </Flex>
     </Flex>
   </Box>
