@@ -5,6 +5,8 @@ import theme from '@/theme'
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
+    <link rel='shortcut icon' href='/favicon.ico' />
+
     <GlobalStyle />
 
     <ThemeProvider theme={theme}>
