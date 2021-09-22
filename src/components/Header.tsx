@@ -46,6 +46,7 @@ const Header = () => (
           backgroundColor='gray.100'
           borderRadius='50%'
           size='30px'
+          aria-label='LinkedIn'
         >
           <Icon margin='auto' name='linkedin' />
         </A>
@@ -60,6 +61,7 @@ const Header = () => (
           backgroundColor='gray.100'
           borderRadius='50%'
           size='30px'
+          aria-label='Facebook'
         >
           <Icon margin='auto' name='facebook' />
         </A>
@@ -74,6 +76,7 @@ const Header = () => (
           backgroundColor='gray.100'
           borderRadius='50%'
           size='30px'
+          aria-label='Twitter'
         >
           <Icon margin='auto' name='twitter' />
         </A>
