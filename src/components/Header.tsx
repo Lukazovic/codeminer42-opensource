@@ -7,6 +7,32 @@ import Heading from './Heading'
 import Logo from './Logo'
 import Text from './Text'
 
+type mediaIcon = {
+  name: 'linkedin' | 'facebook' | 'twitter' | 'github'
+  link: string
+}
+
+const mediaIcons: mediaIcon[] = [
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/company/codeminer42',
+  },
+
+  {
+    name: 'facebook',
+    link: 'https://www.facebook.com/codeminer42',
+  },
+
+  {
+    name: 'twitter',
+    link: 'https://twitter.com/codeminer42',
+  },
+  {
+    name: 'github',
+    link: 'http://github.com/Codeminer42/opensource',
+  },
+]
+
 const Header = () => (
   <Box as='header'>
     <Flex
@@ -34,52 +60,22 @@ const Header = () => (
           </Heading>
         </Flex>
       </A>
-
-      <Flex justifyContent='space-between' width='100px'>
-        <A
-          href='https://www.linkedin.com/company/codeminer42'
-          target='_blank'
-          rel='noopener noreferrer'
-          display='flex'
-          alignItems='center'
-          justifyContent='center'
-          backgroundColor='gray.100'
-          borderRadius='50%'
-          size='30px'
-          aria-label='LinkedIn'
-        >
-          <Icon margin='auto' name='linkedin' />
-        </A>
-
-        <A
-          href='https://www.facebook.com/codeminer42'
-          target='_blank'
-          rel='noopener noreferrer'
-          display='flex'
-          alignItems='center'
-          justifyContent='center'
-          backgroundColor='gray.100'
-          borderRadius='50%'
-          size='30px'
-          aria-label='Facebook'
-        >
-          <Icon margin='auto' name='facebook' />
-        </A>
-
-        <A
-          href='https://twitter.com/codeminer42'
-          target='_blank'
-          rel='noopener noreferrer'
-          display='flex'
-          alignItems='center'
-          justifyContent='center'
-          backgroundColor='gray.100'
-          borderRadius='50%'
-          size='30px'
-          aria-label='Twitter'
-        >
-          <Icon margin='auto' name='twitter' />
-        </A>
+      <Flex justifyContent='space-between' width='150px'>
+        {mediaIcons.map((icon) => (
+          <Flex
+            key={icon.name}
+            as='span'
+            alignItems='center'
+            justifyContent='center'
+            backgroundColor='gray.100'
+            borderRadius='50%'
+            size='30px'
+          >
+            <A href={icon.link} target='_blank' rel='noopener noreferrer'>
+              <Icon name={icon.name} />
+            </A>
+          </Flex>
+        ))}
       </Flex>
     </Flex>
   </Box>
