@@ -1,3 +1,4 @@
+import SEO from '@/components/SEO'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -33,7 +34,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel='icon' href='/favicon.ico' />
+          <SEO />
 
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link
