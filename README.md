@@ -1,6 +1,6 @@
 # [opensource](https://opensource.codeminer42.com)
 
-![CI Workflow](https://github.com/Codeminer42/opensource/actions/workflows/main.yml/badge.svg)
+![CI Workflow](https://github.com/Codeminer42/opensource/actions/workflows/ci.yml/badge.svg)
 
 ### 🏠 [Homepage](https://opensource.codeminer42.com)
 
