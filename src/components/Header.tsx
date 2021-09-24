@@ -62,19 +62,20 @@ const Header = () => (
       </A>
       <Flex justifyContent='space-between' width='150px'>
         {mediaIcons.map((icon) => (
-          <Flex
+          <A
+            href={icon.link}
+            target='_blank'
+            rel='noopener noreferrer'
             key={icon.name}
-            as='span'
             alignItems='center'
+            as={Flex}
             justifyContent='center'
             backgroundColor='gray.100'
             borderRadius='50%'
             size='30px'
           >
-            <A href={icon.link} target='_blank' rel='noopener noreferrer'>
-              <Icon name={icon.name} />
-            </A>
-          </Flex>
+            <Icon name={icon.name} />
+          </A>
         ))}
       </Flex>
     </Flex>
