@@ -1,8 +1,8 @@
 import React from 'react'
 import Box from './Box'
 
-const Logo: React.FC<{}> = (props) => (
-  <Box as='svg' width='60px' height='60px' viewBox='0 0 300 300' {...props}>
+const Logo: React.FC = () => (
+  <Box as='svg' width='60px' height='60px' viewBox='0 0 300 300'>
     <defs>
       <filter id='filter-1'>
         <feColorMatrix

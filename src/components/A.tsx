@@ -1,5 +1,4 @@
 import React, { ComponentProps } from 'react'
-import { StyledComponentPropsWithRef } from 'styled-components'
 import css from '@styled-system/css'
 import Link from 'next/link'
 import Text from './Text'
