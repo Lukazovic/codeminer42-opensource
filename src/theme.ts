@@ -8,6 +8,13 @@ const colors = {
   blue: '#2e31a6',
   red: '#e95659',
   green: '#2ecc71',
+
+  hacktoberfest: {
+    black: '#2b3531',
+    white: '#fff7ed',
+    red: '#b53a25',
+    orange: '#f74700',
+  },
 }
 
 //             0  1  2  3   4   5   6    7    8
@@ -16,6 +23,7 @@ const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 const fonts = {
   body: "'Barlow', sans-serif",
   logo: "'Dosis', sans-serif",
+  hacktoberfest: "'Poppins', sans-serif",
 }
 
 //                 0  1  2  3  4   5   6   7   8   9   10  11  12   13
