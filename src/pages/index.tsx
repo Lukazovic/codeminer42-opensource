@@ -13,6 +13,7 @@ import {
   Section,
   Text,
 } from '@/components'
+import { Hacktoberfest } from '@/hacktoberfest'
 
 const Home: NextPage = () => {
   return (
@@ -195,6 +196,8 @@ const Home: NextPage = () => {
             </Flex>
           </Container>
         </Section>
+
+        <Hacktoberfest />
 
         <Section bg='blue'>
           <Container>

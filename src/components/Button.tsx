@@ -9,13 +9,9 @@ type Props = {
 const Button = styled(Text)<Props>`
   display: inline-flex;
   align-items: center;
-  min-height: 36px;
-  padding: 0 ${themeGet('space.4')}px ${themeGet('space.1')}px;
-  font-family: inherit;
-  font-size: inherit;
+
   line-height: 1;
   color: ${themeGet('colors.white')};
-  background-color: ${themeGet('colors.red')};
   opacity: 1;
   outline: none;
   cursor: pointer;
@@ -36,6 +32,13 @@ const Button = styled(Text)<Props>`
 
 Button.defaultProps = {
   as: 'button',
+  px: '4',
+  py: '1',
+  minHeight: '36px',
+  fontFamily: 'inherit',
+  fontSize: 'inherit',
+  color: 'white',
+  bg: 'red',
 }
 
 export default Button
