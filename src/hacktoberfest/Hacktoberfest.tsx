@@ -29,7 +29,7 @@ const Hacktoberfest = () => (
           Subscribe Now
         </Button>
 
-        <Heading
+        {/*<Heading
           as='h3'
           mt='5'
           fontFamily='hacktoberfest'
@@ -43,7 +43,7 @@ const Hacktoberfest = () => (
         <Text mt='4' fontFamily='hacktoberfest' fontSize='6' color='white'>
           Have 1 Pull Requested accepted to win 1 custom limited edition
           T-Shirt.
-        </Text>
+        </Text>*/}
       </Flex>
     </Container>
   </Section>
