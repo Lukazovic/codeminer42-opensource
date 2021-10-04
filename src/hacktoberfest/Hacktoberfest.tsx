@@ -1,12 +1,4 @@
-import {
-  A,
-  Button,
-  Container,
-  Flex,
-  Heading,
-  Section,
-  Text,
-} from '@/components'
+import { A, Button, Container, Flex, Section } from '@/components'
 import Logo from './Logo'
 
 const hacktoberUrl = 'https://hacktoberfest.digitalocean.com/'
