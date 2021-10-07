@@ -1,6 +1,3 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Box from '@/components/Box'
 import {
   A,
   Button,
@@ -13,7 +10,10 @@ import {
   Section,
   Text,
 } from '@/components'
+import Box from '@/components/Box'
 import { Hacktoberfest } from '@/hacktoberfest'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   return (
@@ -190,7 +190,14 @@ const Home: NextPage = () => {
                   Marvin is a chat bot built on the Hubot framework
                 </Text>
                 <Flex mt={3} justifyContent='center'>
-                  <Button disabled>Check Repository</Button>
+                  <Button
+                    as='a'
+                    href='https://github.com/Codeminer42/marvin-cm42'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    Check Repository
+                  </Button>
                 </Flex>
               </Box>
             </Flex>
