@@ -13,7 +13,8 @@ import {
 import Box from '@/components/Box'
 import Grid from '@/components/Grid'
 import { Hacktoberfest } from '@/hacktoberfest'
-import { Project, projectsData } from '@/utils/data'
+import { Project } from '@/domain/Project'
+import { projectsData } from '@/utils/data'
 import type { NextPage, GetStaticProps, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
 
