@@ -14,7 +14,7 @@ import Box from '@/components/Box'
 import Grid from '@/components/Grid'
 import { Hacktoberfest } from '@/hacktoberfest'
 import { Project } from '@/domain/Project'
-import { projectsData } from '@/utils/data'
+import { getProjects } from '@/repositories/projectsRepository'
 import type { NextPage, GetStaticProps, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
 
@@ -147,13 +147,16 @@ const Home: NextPage<HomeProps> = ({ projects }) => {
   )
 }
 
-export const getStaticProps: GetStaticProps =
-  (): GetStaticPropsResult<HomeProps> => {
-    return {
-      props: {
-        projects: projectsData,
-      },
-    }
+export const getStaticProps: GetStaticProps = async (): Promise<
+  GetStaticPropsResult<HomeProps>
+> => {
+  const projects = await getProjects()
+
+  return {
+    props: {
+      projects,
+    },
   }
+}
 
 export default Home

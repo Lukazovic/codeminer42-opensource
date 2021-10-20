@@ -1,6 +1,6 @@
 import { Project } from '@/domain/Project'
 
-export const projectsData: Project[] = [
+const availableProjects: Project[] = [
   {
     name: 'Central',
     description:
@@ -25,3 +25,5 @@ export const projectsData: Project[] = [
     repository: 'https://github.com/Codeminer42/marvin-cm42',
   },
 ]
+
+export const getProjects = async (): Promise<Project[]> => availableProjects
